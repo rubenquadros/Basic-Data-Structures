@@ -1,9 +1,9 @@
-package linkedlist
+package linkedlist.circularlinkedlist
 
 /**
- * Created by ruben.quadros on 15/05/21
+ * Created by ruben.quadros on 17/05/21
  **/
-data class SinglyLinkedList(
+data class CircularLinkedList(
         var head: Node? = null
 )
 

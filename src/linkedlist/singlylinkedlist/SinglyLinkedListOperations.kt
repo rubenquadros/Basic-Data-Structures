@@ -1,4 +1,4 @@
-package linkedlist
+package linkedlist.singlylinkedlist
 
 import java.util.*
 import kotlin.collections.HashSet
@@ -13,6 +13,7 @@ class SinglyLinkedListOperations {
     init {
         print("\n")
         println("=============== SINGLY LINKED LIST ================")
+        println("\n")
     }
 
     private var left: Node? = null
@@ -860,7 +861,7 @@ class SinglyLinkedListOperations {
     }
 
     /**
-     * Print the values of the linked list
+     * print the values of the linked list
      */
     fun printSinglyLinkedList() {
         if (singlyLinkedList.head == null) {

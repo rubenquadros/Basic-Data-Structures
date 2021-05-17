@@ -1,4 +1,4 @@
-package linkedlist
+package linkedlist.singlylinkedlist
 
 /**
  * Created by ruben.quadros on 15/05/21
@@ -9,45 +9,6 @@ class DriverOfSinglyLinkedList {
 
         //try to print empty linked list
         singlyLinkedListOperations.printSinglyLinkedList()
-
-        //try to reverse an empty linked list (stack)
-        singlyLinkedListOperations.reverseLinkedListStack()
-
-        //try to reverse an empty linked list (recursive)
-        singlyLinkedListOperations.reverseLinkedListRecursive()
-
-        //try to reverse an empty linked list (iterative)
-        singlyLinkedListOperations.reverseLinkedListIterative()
-
-        //try to segregate even and odd nodes in an empty linked list
-        singlyLinkedListOperations.segregateEvenOdd()
-
-        //try to move last node to front in an empty linked list
-        singlyLinkedListOperations.moveToFront()
-
-        //try to pairwise swap nodes in an empty linked list (iterative)
-        singlyLinkedListOperations.pairwiseSwapNodesRecursive()
-
-        //try to pairwise swap nodes in an empty linked list (iterative)
-        singlyLinkedListOperations.pairwiseSwapNodesIterative()
-
-        //try to swap nodes of in an empty linked list
-        singlyLinkedListOperations.swapNodes(0, 1)
-
-        //try to remove unsorted duplicates in an empty linked list
-        singlyLinkedListOperations.removeUnsortedDuplicates()
-
-        //try to remove sorted duplicates in an empty linked list (recursive)
-        singlyLinkedListOperations.removeSortedDuplicatesRecursive()
-
-        //try to remove sorted duplicates in an empty linked list (2 pointers)
-        singlyLinkedListOperations.removeSortedDuplicatesPointers()
-
-        //try to remove sorted duplicates in an empty linked list (iterative)
-        singlyLinkedListOperations.removeSortedDuplicatesIterative()
-
-        //try to check if linked list is palindrome on an empty linked list
-        singlyLinkedListOperations.isLinkedListPalindromeStack()
 
         //try to create a loop in an empty linked list
         singlyLinkedListOperations.createHeadLoop()
@@ -117,8 +78,6 @@ class DriverOfSinglyLinkedList {
         singlyLinkedListOperations.insertNodeAtFront(6)
         singlyLinkedListOperations.insertNodeAtFront(4)
         singlyLinkedListOperations.insertNodeAtFront(4)
-
-        //print linked list after inserting nodes at front
         singlyLinkedListOperations.printSinglyLinkedList()
 
         //try to insert a node after a node that is not present in the linked list
@@ -127,8 +86,6 @@ class DriverOfSinglyLinkedList {
         //insert nodes after a given node
         singlyLinkedListOperations.insertNodeAfterGivenNode(6, 7)
         singlyLinkedListOperations.insertNodeAfterGivenNode(5, 8)
-
-        //print linked list after inserting nodes after given nodes
         singlyLinkedListOperations.printSinglyLinkedList()
 
         //insert nodes at end
@@ -136,8 +93,6 @@ class DriverOfSinglyLinkedList {
         singlyLinkedListOperations.insertNodeAtEnd(3)
         singlyLinkedListOperations.insertNodeAtEnd(9)
         singlyLinkedListOperations.insertNodeAtEnd(11)
-
-        //print linked list after inserting nodes at end
         singlyLinkedListOperations.printSinglyLinkedList()
 
         //try to delete a node that is not present in the linked list
@@ -147,8 +102,6 @@ class DriverOfSinglyLinkedList {
         singlyLinkedListOperations.deleteNodeOfKey(4)
         singlyLinkedListOperations.deleteNodeOfKey(11)
         singlyLinkedListOperations.deleteNodeOfKey(5)
-
-        //print linked list after deleting nodes
         singlyLinkedListOperations.printSinglyLinkedList()
 
         //try to delete out of bound positions of linked list
@@ -159,8 +112,6 @@ class DriverOfSinglyLinkedList {
         singlyLinkedListOperations.deleteNodeOfPosition(0)
         singlyLinkedListOperations.deleteNodeOfPosition(6)
         singlyLinkedListOperations.deleteNodeOfPosition(2)
-
-        //print linked list after deleting nodes
         singlyLinkedListOperations.printSinglyLinkedList()
 
         //find the length of the linked list
@@ -225,10 +176,8 @@ class DriverOfSinglyLinkedList {
         //find the mid node of linked list (2 pointers)
         singlyLinkedListOperations.getMidNodePointers()
 
-        //add a repeating value in linked list
-        singlyLinkedListOperations.insertNodeAtEnd(6)
-
         //find occurrences of a value in the linked list (iterative)
+        singlyLinkedListOperations.insertNodeAtEnd(6)
         singlyLinkedListOperations.getRepeatingCountIterative(10)
         singlyLinkedListOperations.getRepeatingCountIterative(1)
         singlyLinkedListOperations.getRepeatingCountIterative(6)
@@ -244,9 +193,6 @@ class DriverOfSinglyLinkedList {
         //find length of the loop when there is no loop in linked list
         singlyLinkedListOperations.getLengthOfLoop()
 
-        //delete loop when there is no loop in linked list
-        singlyLinkedListOperations.deleteLoop()
-
         //create a loop in linked list
         singlyLinkedListOperations.createHeadLoop()
 
@@ -256,10 +202,11 @@ class DriverOfSinglyLinkedList {
         //find the length of the loop in linked list
         singlyLinkedListOperations.getLengthOfLoop()
 
-        //delete loop in linked list
+        //delete loop when there is no loop in linked list
         singlyLinkedListOperations.deleteLoop()
 
-        //print linked list after removing the loop
+        //delete loop in linked list
+        singlyLinkedListOperations.deleteLoop()
         singlyLinkedListOperations.printSinglyLinkedList()
 
         //create a loop in linked list
@@ -270,8 +217,6 @@ class DriverOfSinglyLinkedList {
 
         //delete loop in linked list
         singlyLinkedListOperations.deleteLoop()
-
-        //print linked list after removing the loop
         singlyLinkedListOperations.printSinglyLinkedList()
 
         //check if linked list is palindrome (stack)
@@ -280,6 +225,7 @@ class DriverOfSinglyLinkedList {
 
         //create a palindrome linked list and check if it is palindrome
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.isLinkedListPalindromeStack()
         singlyLinkedListOperations.insertNodeAtEnd(1)
         singlyLinkedListOperations.insertNodeAtEnd(2)
         singlyLinkedListOperations.insertNodeAtEnd(1)
@@ -297,6 +243,7 @@ class DriverOfSinglyLinkedList {
 
         //remove sorted duplicates from a sorted linked list (iterative)
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.removeSortedDuplicatesIterative()
         singlyLinkedListOperations.insertNodeAtEnd(1)
         singlyLinkedListOperations.insertNodeAtEnd(1)
         singlyLinkedListOperations.insertNodeAtEnd(2)
@@ -309,6 +256,7 @@ class DriverOfSinglyLinkedList {
 
         //remove sorted duplicates from a sorted linked list (2 pointers)
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.removeSortedDuplicatesPointers()
         singlyLinkedListOperations.insertNodeAtEnd(1)
         singlyLinkedListOperations.insertNodeAtEnd(1)
         singlyLinkedListOperations.insertNodeAtEnd(2)
@@ -321,6 +269,7 @@ class DriverOfSinglyLinkedList {
 
         //remove sorted duplicates from a sorted linked list (recursive)
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.removeSortedDuplicatesRecursive()
         singlyLinkedListOperations.insertNodeAtEnd(1)
         singlyLinkedListOperations.insertNodeAtEnd(1)
         singlyLinkedListOperations.insertNodeAtEnd(2)
@@ -333,6 +282,7 @@ class DriverOfSinglyLinkedList {
 
         //remove unsorted duplicates from a sorted linked list
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.removeUnsortedDuplicates()
         singlyLinkedListOperations.insertNodeAtEnd(1)
         singlyLinkedListOperations.insertNodeAtEnd(2)
         singlyLinkedListOperations.insertNodeAtEnd(1)
@@ -345,6 +295,7 @@ class DriverOfSinglyLinkedList {
 
         //swap nodes in a linked list
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.swapNodes(0, 1)
         singlyLinkedListOperations.insertNodeAtEnd(10)
         singlyLinkedListOperations.insertNodeAtEnd(15)
         singlyLinkedListOperations.insertNodeAtEnd(12)
@@ -364,6 +315,7 @@ class DriverOfSinglyLinkedList {
 
         //pairwise swap nodes of a linked list (iterative)
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.pairwiseSwapNodesIterative()
         singlyLinkedListOperations.insertNodeAtEnd(1)
         singlyLinkedListOperations.insertNodeAtEnd(2)
         singlyLinkedListOperations.insertNodeAtEnd(3)
@@ -376,6 +328,7 @@ class DriverOfSinglyLinkedList {
 
         //pairwise swap nodes of a linked list (recursive)
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.pairwiseSwapNodesRecursive()
         singlyLinkedListOperations.insertNodeAtEnd(11)
         singlyLinkedListOperations.insertNodeAtEnd(12)
         singlyLinkedListOperations.insertNodeAtEnd(13)
@@ -388,6 +341,7 @@ class DriverOfSinglyLinkedList {
 
         //move last node of linked list to front
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.moveToFront()
         singlyLinkedListOperations.insertNodeAtEnd(1)
         singlyLinkedListOperations.insertNodeAtEnd(2)
         singlyLinkedListOperations.insertNodeAtEnd(3)
@@ -399,6 +353,7 @@ class DriverOfSinglyLinkedList {
 
         //segregate even and odd nodes of linked list
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.segregateEvenOdd()
         singlyLinkedListOperations.insertNodeAtEnd(17)
         singlyLinkedListOperations.insertNodeAtEnd(15)
         singlyLinkedListOperations.insertNodeAtEnd(8)
@@ -415,6 +370,7 @@ class DriverOfSinglyLinkedList {
 
         //reverse a linked list (iterative)
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.reverseLinkedListIterative()
         singlyLinkedListOperations.insertNodeAtEnd(1)
         singlyLinkedListOperations.insertNodeAtEnd(2)
         singlyLinkedListOperations.insertNodeAtEnd(3)
@@ -426,6 +382,7 @@ class DriverOfSinglyLinkedList {
 
         //reverse a linked list (recursive)
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.reverseLinkedListRecursive()
         singlyLinkedListOperations.insertNodeAtEnd(6)
         singlyLinkedListOperations.insertNodeAtEnd(7)
         singlyLinkedListOperations.insertNodeAtEnd(8)
@@ -437,6 +394,7 @@ class DriverOfSinglyLinkedList {
 
         //reverse a linked list (stack)
         singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.reverseLinkedListStack()
         singlyLinkedListOperations.insertNodeAtEnd(26)
         singlyLinkedListOperations.insertNodeAtEnd(27)
         singlyLinkedListOperations.insertNodeAtEnd(28)
