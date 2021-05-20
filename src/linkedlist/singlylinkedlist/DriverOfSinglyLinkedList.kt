@@ -313,6 +313,22 @@ class DriverOfSinglyLinkedList {
         singlyLinkedListOperations.swapNodes(13, 15)
         singlyLinkedListOperations.printSinglyLinkedList()
 
+        //swap k and k from last nodes
+        singlyLinkedListOperations.deleteLinkedList()
+        singlyLinkedListOperations.swapKAndKFromLast(1)
+        singlyLinkedListOperations.insertNodeAtFront(10)
+        singlyLinkedListOperations.swapKAndKFromLast(1)
+        singlyLinkedListOperations.insertNodeAtFront(9)
+        singlyLinkedListOperations.swapKAndKFromLast(3)
+        singlyLinkedListOperations.insertNodeAtFront(8)
+        singlyLinkedListOperations.insertNodeAtFront(7)
+        singlyLinkedListOperations.swapKAndKFromLast(2)
+        singlyLinkedListOperations.insertNodeAtFront(6)
+        singlyLinkedListOperations.swapKAndKFromLast(-1)
+        singlyLinkedListOperations.printSinglyLinkedList()
+        singlyLinkedListOperations.swapKAndKFromLast(5)
+        singlyLinkedListOperations.printSinglyLinkedList()
+
         //pairwise swap nodes of a linked list (iterative)
         singlyLinkedListOperations.deleteLinkedList()
         singlyLinkedListOperations.pairwiseSwapNodesIterative()

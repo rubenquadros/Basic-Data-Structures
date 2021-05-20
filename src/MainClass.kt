@@ -1,4 +1,5 @@
 import linkedlist.circularlinkedlist.DriverOfCircularLinkedList
+import linkedlist.doublylinkedlist.DriverOfDoublyLinkedList
 import linkedlist.singlylinkedlist.DriverOfSinglyLinkedList
 
 /**
@@ -14,6 +15,9 @@ class MainClass {
 
             //All operations on a circular linked list
             DriverOfCircularLinkedList()
+
+            //All operations on a doubly linked list
+            DriverOfDoublyLinkedList()
         }
     }
 }

@@ -699,6 +699,65 @@ class SinglyLinkedListOperations {
     }
 
     /**
+     *
+     */
+    fun swapKAndKFromLast(k: Int) {
+        if (singlyLinkedList.head == null) {
+            println("Cannot swap K and K from last as the linked list is empty")
+            return
+        }
+        if (singlyLinkedList.head?.next == null) {
+            println("Cannot swap K and K from last as the linked list has only one node")
+            return
+        }
+        if (k < 1) {
+            println("Cannot swap as given K is out of bounds of linked list")
+            return
+        }
+        var length = 0
+        var node = singlyLinkedList.head
+        while (node != null) {
+            length++
+            node = node.next
+        }
+        if (length < k) {
+            println("Cannot swap as given K is out of bounds of linked list")
+            return
+        }
+        if (k == length-k) {
+            println("Cannot swap as node at K and K node from last are same")
+            return
+        }
+        var currX: Node? = singlyLinkedList.head
+        var prevX: Node? = null
+        for (i in 1 until k) {
+            prevX = currX
+            currX = currX?.next
+        }
+        var currY: Node? = singlyLinkedList.head
+        var prevY: Node? = null
+        for (j in 1 until length-k+1) {
+            prevY = currY
+            currY = currY?.next
+        }
+        if (prevX != null) {
+            prevX.next = currY
+        }
+        if (prevY != null) {
+            prevY.next = currX
+        }
+        val temp = currX?.next
+        currX?.next = currY?.next
+        currY?.next = temp
+        if (k == 1) {
+            singlyLinkedList.head = currY
+        }
+        if (k == length) {
+            singlyLinkedList.head = currX
+        }
+    }
+
+    /**
      * pairwise swap nodes in a linked list iteratively
      * cannot swap nodes pairwise if linked list is empty
      */
