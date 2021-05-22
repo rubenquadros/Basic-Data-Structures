@@ -1,6 +1,7 @@
 import linkedlist.circularlinkedlist.DriverOfCircularLinkedList
 import linkedlist.doublylinkedlist.DriverOfDoublyLinkedList
 import linkedlist.singlylinkedlist.DriverOfSinglyLinkedList
+import stack.DriverOfStack
 
 /**
  * Created by ruben.quadros on 15/05/21
@@ -18,6 +19,9 @@ class MainClass {
 
             //All operations on a doubly linked list
             DriverOfDoublyLinkedList()
+
+            //All operations on a stack
+            DriverOfStack()
         }
     }
 }
