@@ -55,12 +55,105 @@ class DriverOfStack {
 
         stackLinkedList.printStack()
 
-        println("Is stack empty (array): ${stackLinkedList.isEmpty()}")
-        println("The top element in stack is (array): ${stackLinkedList.peek()}")
+        println("Is stack empty (linked list): ${stackLinkedList.isEmpty()}")
+        println("The top element in stack is (linked list): ${stackLinkedList.peek()}")
         stackLinkedList.pop()
         stackLinkedList.pop()
 
         stackLinkedList.printStack()
+
+        //operations on stack implemented using queue (push heavy)
+        val stackQueuePush = StackQueuePush()
+
+        stackQueuePush.printStack()
+        stackQueuePush.peek()
+        stackQueuePush.pop()
+        println("Is stack empty (queue push): ${stackQueuePush.isEmpty()}")
+
+        stackQueuePush.push(1)
+        stackQueuePush.push(2)
+        stackQueuePush.push(3)
+        stackQueuePush.push(4)
+        stackQueuePush.push(5)
+        stackQueuePush.push(6)
+
+        stackQueuePush.printStack()
+
+        println("Is stack empty (queue push): ${stackQueuePush.isEmpty()}")
+        stackQueuePush.pop()
+        stackQueuePush.pop()
+        println("The top element in stack is (queue push): ${stackQueuePush.peek()}")
+
+        stackQueuePush.printStack()
+
+        //operations on stack implemented using queue (pop heavy)
+        val stackQueuePop = StackQueuePop()
+
+        stackQueuePop.printStack()
+        stackQueuePop.peek()
+        stackQueuePop.pop()
+        println("Is stack empty (queue pop): ${stackQueuePop.isEmpty()}")
+
+        stackQueuePop.push(1)
+        stackQueuePop.push(2)
+        stackQueuePop.push(3)
+        stackQueuePop.push(4)
+        stackQueuePop.push(5)
+        stackQueuePop.push(6)
+
+        stackQueuePop.printStack()
+
+        println("Is stack empty (queue push): ${stackQueuePop.isEmpty()}")
+        stackQueuePop.pop()
+        stackQueuePop.pop()
+
+        stackQueuePop.printStack()
+
+        //operations on stack implemented using single queue
+        val stackQueue = StackQueue()
+
+        stackQueue.printStack()
+        stackQueue.peek()
+        stackQueue.pop()
+        println("Is stack empty (single queue): ${stackQueue.isEmpty()}")
+
+        stackQueue.push(1)
+        stackQueue.push(2)
+        stackQueue.push(3)
+        stackQueue.push(4)
+        stackQueue.push(5)
+        stackQueue.push(6)
+
+        stackQueue.printStack()
+
+        println("Is stack empty (single queue): ${stackQueue.isEmpty()}")
+        stackQueue.pop()
+        stackQueue.pop()
+        println("The top element in stack is (single queue): ${stackQueue.peek()}")
+
+        //operations on stack implemented using double ended queue (dequeue)
+        val stackDequeue = StackDequeue()
+
+        stackDequeue.printStack()
+        stackDequeue.peek()
+        stackDequeue.pop()
+        println("Is stack empty (dequeue): ${stackDequeue.isEmpty()}")
+
+        stackDequeue.push(1)
+        stackDequeue.push(2)
+        stackDequeue.push(3)
+        stackDequeue.push(4)
+        stackDequeue.push(5)
+        stackDequeue.push(6)
+
+        stackDequeue.printStack()
+
+        println("Is stack empty (dequeue): ${stackDequeue.isEmpty()}")
+        println("The top element in stack is (dequeue): ${stackDequeue.peek()}")
+        stackDequeue.pop()
+        stackDequeue.pop()
+        stackDequeue.printStack()
+        println("The top element in stack is (dequeue): ${stackDequeue.peek()}")
 
         //operations on special stack
         val specialStack = SpecialStack()

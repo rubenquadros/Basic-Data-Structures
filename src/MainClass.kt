@@ -1,6 +1,7 @@
 import linkedlist.circularlinkedlist.DriverOfCircularLinkedList
 import linkedlist.doublylinkedlist.DriverOfDoublyLinkedList
 import linkedlist.singlylinkedlist.DriverOfSinglyLinkedList
+import queue.DriverOfQueue
 import stack.DriverOfStack
 
 /**
@@ -22,6 +23,9 @@ class MainClass {
 
             //All operations on a stack
             DriverOfStack()
+
+            //All operations on a queue
+            DriverOfQueue()
         }
     }
 }
