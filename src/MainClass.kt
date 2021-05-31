@@ -3,6 +3,8 @@ import linkedlist.doublylinkedlist.DriverOfDoublyLinkedList
 import linkedlist.singlylinkedlist.DriverOfSinglyLinkedList
 import queue.DriverOfQueue
 import stack.DriverOfStack
+import tree.binarysearchtree.DriverOfBinarySearchTree
+import tree.binarytree.DriverOfBinaryTree
 
 /**
  * Created by ruben.quadros on 15/05/21
@@ -26,6 +28,12 @@ class MainClass {
 
             //All operations on a queue
             DriverOfQueue()
+
+            //All operations on a binary tree
+            DriverOfBinaryTree()
+
+            //All operations on a binary search tree (BST)
+            DriverOfBinarySearchTree()
         }
     }
 }
