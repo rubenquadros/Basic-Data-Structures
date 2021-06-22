@@ -2,6 +2,7 @@ import linkedlist.circularlinkedlist.DriverOfCircularLinkedList
 import linkedlist.doublylinkedlist.DriverOfDoublyLinkedList
 import linkedlist.singlylinkedlist.DriverOfSinglyLinkedList
 import queue.DriverOfQueue
+import sorting.DriverOfSorting
 import stack.DriverOfStack
 import tree.binarysearchtree.DriverOfBinarySearchTree
 import tree.binarytree.DriverOfBinaryTree
@@ -14,6 +15,9 @@ class MainClass {
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
+            //All Sorting algorithms
+            DriverOfSorting()
+
             //All operations on a singly linked list
             DriverOfSinglyLinkedList()
 
